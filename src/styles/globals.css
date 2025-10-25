@@ -2,53 +2,43 @@
 
 :root {
   --font-size: 16px;
-  
-  /* TerraMind Brand Colors */
-  --terramind-green: #2E8B57;
-  --earth-brown: #8B4513;
-  --sky-blue: #00AEEF;
-  --ai-silver: #C0C0C0;
-  --charcoal-black: #333333;
-  --pure-white: #FFFFFF;
-  
-  /* Semantic Color Variables */
   --background: #ffffff;
-  --foreground: #333333;
+  --foreground: oklch(0.145 0 0);
   --card: #ffffff;
-  --card-foreground: #333333;
-  --popover: #ffffff;
-  --popover-foreground: #333333;
-  --primary: #2E8B57;
-  --primary-foreground: #ffffff;
-  --secondary: #8B4513;
-  --secondary-foreground: #ffffff;
-  --muted: #f5f5f5;
-  --muted-foreground: #666666;
-  --accent: #00AEEF;
-  --accent-foreground: #ffffff;
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: #030213;
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.95 0.0058 264.53);
+  --secondary-foreground: #030213;
+  --muted: #ececf0;
+  --muted-foreground: #717182;
+  --accent: #e9ebef;
+  --accent-foreground: #030213;
   --destructive: #d4183d;
   --destructive-foreground: #ffffff;
   --border: rgba(0, 0, 0, 0.1);
   --input: transparent;
   --input-background: #f3f3f5;
-  --switch-background: #C0C0C0;
+  --switch-background: #cbced4;
   --font-weight-medium: 500;
   --font-weight-normal: 400;
-  --ring: #2E8B57;
-  --chart-1: #2E8B57;
-  --chart-2: #00AEEF;
-  --chart-3: #8B4513;
-  --chart-4: #C0C0C0;
-  --chart-5: #333333;
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
   --radius: 0.625rem;
-  --sidebar: #f9f9f9;
-  --sidebar-foreground: #333333;
-  --sidebar-primary: #2E8B57;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #f5f5f5;
-  --sidebar-accent-foreground: #333333;
-  --sidebar-border: #e0e0e0;
-  --sidebar-ring: #2E8B57;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: #030213;
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
 }
 
 .dark {
@@ -89,15 +79,6 @@
 }
 
 @theme inline {
-  /* TerraMind Custom Colors */
-  --color-terramind-green: var(--terramind-green);
-  --color-earth-brown: var(--earth-brown);
-  --color-sky-blue: var(--sky-blue);
-  --color-ai-silver: var(--ai-silver);
-  --color-charcoal-black: var(--charcoal-black);
-  --color-pure-white: var(--pure-white);
-  
-  /* Semantic Colors */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -136,6 +117,13 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  
+  /* TerraMind Brand Colors */
+  --color-terramind-green: #2E8B57;
+  --color-earth-brown: #8B4513;
+  --color-sky-blue: #00AEEF;
+  --color-ai-silver: #C0C0C0;
+  --color-charcoal: #333333;
 }
 
 @layer base {
